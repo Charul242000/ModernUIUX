@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "615592614800",
+    "firebase_url": "https://modernuiux.firebaseio.com",
+    "project_id": "modernuiux",
+    "storage_bucket": "modernuiux.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615592614800:android:9060d3206e4e313a747115",
+        "android_client_info": {
+          "package_name": "com.superapp.modernuiux"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615592614800-mghjh08cmtq0vqgsu4kl2bpmpmoj1c5k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.superapp.modernuiux",
+            "certificate_hash": "8d266ae6e243fed2d7ff8c34b29c15295bedcfdc"
+          }
+        },
+        {
+          "client_id": "615592614800-g1gd5bn3h3idfuv52ovld4csqttun3h4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVd3z_TJw8JQoAS3zQ3_B6Ae7Hz4BzsiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615592614800-g1gd5bn3h3idfuv52ovld4csqttun3h4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

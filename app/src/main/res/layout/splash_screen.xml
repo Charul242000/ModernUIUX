@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="#fece2f"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/CIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/runningman"
+        android:transitionName="logoimage"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/splashtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CIV"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/aclonica"
+        android:transitionName="logintv1"
+        android:padding="20dp"
+        android:text="Modern UI UX"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/splashtv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashtv1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/aclonica"
+        android:padding="5dp"
+        android:text="Practice app"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/logoimagesignup"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/runningman"
+                android:transitionName="logoimage"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_below="@id/logoimagesignup"
+                android:id="@+id/Signuptv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Welcome "
+                android:transitionName="logintv1"
+                android:padding="5dp"
+                android:fontFamily="@font/aclonica"
+                android:textSize="30dp"/>
+            <TextView
+                android:layout_below="@id/Signuptv1"
+                android:id="@+id/Signuptv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up to go "
+                android:transitionName="logintv2"
+                android:padding="5dp"
+                android:fontFamily="@font/aclonica"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_below="@id/Signuptv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Signuptxtinptlyt3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/signupetname"
+                        android:hint="Enter full name"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Signuptxtinptlyt1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/signupetemail"
+                        android:hint="Enter email id"
+                        android:inputType="textEmailAddress"
+                        android:transitionName="logintxtinptlyt1"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Signuptxtinptlyt2"
+                    app:passwordToggleEnabled="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Signupetpassword"
+                        android:hint="Enter password"
+                        android:inputType="textPassword"
+                        android:transitionName="logintxtinptlyt2"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Signuptxtinptlyt4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/signupetphn"
+                        android:hint="Enter phone number"
+                        android:inputType="phone" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <Button
+                    android:id="@+id/signupgo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#000"
+                    android:text="Go"
+                    android:layout_margin="5dp"
+                    android:transitionName="logingo"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/backtosignin"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#00000000"
+                    android:text="Already had account? Go to sign in "
+                    android:layout_margin="5dp"
+                    android:transitionName="newuser"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

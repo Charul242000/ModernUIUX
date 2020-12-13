@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logoimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:transitionName="logoimage"
+        android:src="@drawable/runningman"
+        android:padding="5dp"/>
+    <TextView
+        android:layout_below="@id/logoimage"
+        android:id="@+id/logintv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="logintv1"
+        android:text="Hello there, Welcome Back"
+        android:padding="5dp"
+        android:fontFamily="@font/aclonica"
+        android:textSize="30dp"/>
+    <TextView
+        android:layout_below="@id/logintv1"
+        android:id="@+id/logintv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in to continue"
+        android:transitionName="logintv2"
+        android:padding="5dp"
+        android:fontFamily="@font/aclonica"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_below="@id/logintv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logintxtinptlyt1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginetemail"
+                android:hint="Enter email id"
+                android:inputType="textEmailAddress"
+                android:transitionName="logintxtinptlyt1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logintxtinptlyt2"
+            app:passwordToggleEnabled="true"
+            android:layout_below="@id/logintxtinptlyt1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginetpassword"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:transitionName="logintxtinptlyt2"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/forgetpassword"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#00000000"
+            android:text="Forget password?"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/logingo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#000"
+            android:text="Go"
+            android:transitionName="logingo"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/newuser"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:text="New User? "
+            android:layout_margin="5dp"
+            android:transitionName="newuser"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
